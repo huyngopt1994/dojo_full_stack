@@ -1,0 +1,48 @@
+body * {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body {
+width:93px;
+height: 1000px;
+}
+
+header {
+height: 30px;
+padding:15px;
+width:938px;
+}
+main {
+width: 930px;
+
+}
+header h2 {
+display: inline-block;
+margin-right: 480px;
+}
+header h3 {
+display : inline-block;
+
+}
+th {
+width: 300px;
+}
+img {
+width: 100%;
+}
+p{
+text-align: center;
+}
+ul {
+text-align:center;
+}
+ul li {
+display:inline-block;
+}
+footer img {
+width: 25px;
+height: auto;
+margin:auto;
+}

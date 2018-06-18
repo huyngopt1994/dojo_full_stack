@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script  src="{{url_for('static',filename='js/index.js')}}"></script>
+</head>
+<body>
+    <h1>Welcome To the Greate Number</h1>
+    <p>I am thinking of a number between 1 and 100</p>
+    <p>Take a guess</p>
+    <div class="result">
+    </div>
+    <div class="choose">
+        <input type="number" class ="my_number" name="number" min="1" max="100" required>
+        <button class="my_button" >Submit</button>
+    </div>
+</body>
+</html>

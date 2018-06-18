@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for friend in friends %}
+        <div>
+            <p>First name {{friend.first_name}}</p>
+            <p>Last name {{friend.last_name}}</p>
+             <p>Occupation {{friend.occupation}}</p>
+        </div>
+    <br>
+    <br>
+    {% endfor %}
+    <h1>Add a Friend</h1>
+    <form action="/add_friend" method="POST">
+        <label >
+            First name: <input type="text" name="first_name">
+        </label>
+        <label >
+            Last name: <input type="text" name="last_name">
+        </label>
+        <label >
+            Occupation: <input type="text" name="occupation">
+        </label>
+        <input type="submit" value="add friend">
+    </form>
+</body>
+</html>

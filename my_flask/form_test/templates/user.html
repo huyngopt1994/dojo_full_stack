@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='js/my_script.js') }}"></script>
+</head>
+<body>
+<h1>User page My first template with embedded python</h1>
+<p>
+    This is my name : {{name}}
+    Email : {{email}}
+</p>
+</body>
+</html>

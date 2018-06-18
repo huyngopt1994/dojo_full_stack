@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Result</title>
+	<link rel="stylesheet"  type='text/css' href=" {{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+	<div class='my_div'>
+		{% if good %}
+			<p>Your file has been successfully uploaded</p>
+		{% else %}
+			<p>Your file upload failed.Please try again.</p>
+		{% endif %}
+	</div>
+</body>
+</html>

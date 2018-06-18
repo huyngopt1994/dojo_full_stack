@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+        {{message}}
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+
+<form action="/" method="POST">
+    <label>
+        Email:     <input type="text" name="email">
+
+    </label>
+    <input type="submit" value="Add input">
+</form>
+
+{% for email in emails %}
+    <div>
+        <p>{{email.name}}</p>
+        <p>{{email.created_date}}</p>
+    </div>
+{% endfor %}
+</body>
+</html>

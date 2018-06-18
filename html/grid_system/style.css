@@ -1,0 +1,39 @@
+.col {
+display: inline-block;
+color: violet;
+padding: 10px;
+}
+.row {
+
+border : 2px solid blue;
+padding:10px;
+}
+.col:hover {
+text-decoration: underline;
+border: 2px solid blue;
+}
+@media only screen and (max-width: 480px) {
+    .sm-4 {
+        width: 100%
+    }
+    .b {
+    display: none;
+    }
+    .c {
+    display: none
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width:1024px) {
+    .med-2 {
+    width: 50%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .sm-4 {
+    width: 25%;
+    }
+}
+.wrapper {
+box-sizing : border-box;
+}

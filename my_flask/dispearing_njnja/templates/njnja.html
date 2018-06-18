@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Show Njnja</title>
+</head>
+<body>
+	{% if show_all %}
+		{% for i in my_images %}
+
+		<img src="{{ url_for('static',filename='%s/%s' %('Ninjas',i))}}" alt="no images">
+		{% endfor %}
+	{% else %}
+		<img src="{{ url_for('static', filename='%s/%s' %('Ninjas',color)) }}" alt="no image">
+	{% endif %}
+
+</body>
+</html>

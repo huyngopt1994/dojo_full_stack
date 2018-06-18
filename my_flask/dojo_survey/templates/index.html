@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<h1>Hello Flask</h1>
+<div class="my_div">
+	
+	<form action="/result" method='POST'>
+	Your Name: <input type="text" name="name" required>
+	<br><br>
+	Dojo Location: <select name="location" >
+		<option value="hcm">ho chi minh</option>
+		<option value="hn">ha noi</option>
+	</select>
+	<br><br>
+	Favorite Language: <select name="language">
+		<option value="python">python</option>
+		<option value="js">javascript</option>
+		<option value="java">java</option>
+	</select>
+	<br><br>
+	Comment: <br><br>
+	<input type="text"  class="comment" name="comment">
+	<br><br>
+	<input class="my_button" type="submit">
+</form>
+
+</div>
+
+</body>
+</html>

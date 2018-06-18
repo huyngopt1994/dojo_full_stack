@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type='text/css' href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+
+<form action="/"  method='POST'>
+	<h1>Enter you color values below</h1>
+	<br><br>
+	Red:  <input type="number" name='red' value="{{red}}" min="0" max="255" required>
+	<br><br>
+	Green:  <input type="number" name='green' value="{{green}}" min="0" max="255" required>
+	<br><br>
+	Blue:  <input type="number" name='blue' value="{{blue}}" min="0" max="255" required>
+	<br><br>
+	<p class='notification'> </p>
+	<input type="submit" value="show my color">
+</form>
+</body>
+<script>
+	document.body.style.backgroundColor = "rgb({{red}},{{blue}},{{green}})"  ;
+</script>
+</html>
